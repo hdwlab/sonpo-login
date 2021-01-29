@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* reset
+   ========================================================================== */
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+*:focus {
+	outline: none;
+}
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	overflow-y: scroll;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}
+li {
+	list-style: none;
+}
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+}
+table {
+	font-size: inherit;
+	font: 100%;
+}
+a,
+a:active,
+a:visited,
+a[href^="tel:"] {
+	color: inherit;
+	text-decoration: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+/* normarize reset
+   ========================================================================== */
+h1,
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0 auto;
+}
+/* container
+   ========================================================================== */
+#container {
+	width: 100%;
+	overflow: hidden;
+	opacity: 1;
+	transition: opacity 2.0s ease;
+	background: #fff;
+}
+.loading #container {
+	opacity: 0;
+}
+
+@media screen and (min-width: 750px) {
+/* pc
+   ========================================================================== */
+.sp {
+	display: none;
+}
+.loadingAnim_line::before {
+	background-size: 300px 163px;
+}
+#container {
+	padding-top: 0; /* cmn.cssでヘッダの高さ設定 */
+}
+
+}
+
+@charset "UTF-8";
+
+@media screen and (max-width: 750px) {
+.br-pc {
+	display: none;
+}
+body {
+	line-height: 1.4;
+}
+}
+
+
+@charset "utf-8";
+
+@media screen and (min-width: 750px) {
+a {
+	transition: opacity 0.2s ease;
+}
+a:hover {
+	opacity: 0.6;
+}
+.sp {
+	display: none !important;
+}
+body {
+	min-width: 1200px;
+}
+}

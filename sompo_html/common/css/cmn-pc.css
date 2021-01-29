@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@media screen and (min-width: 750px) {
+a {
+	transition: opacity 0.2s ease;
+}
+a:hover {
+	opacity: 0.6;
+}
+.sp {
+	display: none !important;
+}
+body {
+	min-width: 1200px;
+}
+}

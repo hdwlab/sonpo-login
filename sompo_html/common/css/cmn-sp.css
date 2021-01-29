@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 750px) {
+.br-pc {
+	display: none;
+}
+body {
+	line-height: 1.4;
+}
+}
