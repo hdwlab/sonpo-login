@@ -16,6 +16,7 @@ container
 	position: relative;
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 }
 /* =========================================================
 logo
@@ -38,7 +39,7 @@ login
 ========================================================= */
 #login {
 	width: 93%;
-	margin: auto;
+	margin: 0 auto 16vw;
 }
 #login .login-inner {
 	background: #fff;
